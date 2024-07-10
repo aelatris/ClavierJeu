@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="intro.css">
+    <script src="index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="tout">
+        <h1 style="opacity: 1;">The moment you click this button is the moment where your fingers may start hurting. Good luck !</h1>
+    
+        <h3>Click this button below to start or click ENTER</h3>
+    <div>
+        <a href="typingPage.html"><button id="commencer">Continue</button></a>
+    </div>
+    </div>
+
+
+    <script>
+        var bouttonStart = document.getElementById("commencer");
+
+        document.addEventListener("keydown", function(event) {
+            // Check if the pressed key is the "Enter" key (keycode 13)
+            if (event.keyCode === 13) {
+              // Call the validerMot function when the "Enter" key is pressed
+              bouttonStart.click();
+              
+            }
+        })
+    </script>
+
+
+
+
+
+</body>
+</html>

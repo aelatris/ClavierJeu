@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="jeu">
+        <div id="content">
+          
+
+            <select id="timerChoice">
+                <option value="...">--Please choose your timer--</option>
+                <option value=40>40 seconds</option>
+                <option value=60>60 seconds</option>
+                <option value=80>80 seconds</option>
+                <option value=100>100 seconds</option>
+                <option value=120>120 seconds</option>
+               
+               
+               
+               
+               
+              
+
+
+
+              </select>
+              <button onclick="getOption()">Check option</button>
+
+
+              <script >
+ 
+                function getOption() {
+                    
+
+                    selectElement = document.querySelector('#select1');
+                    output = timerChoice.options[timerChoice.selectedIndex].value;
+                    document.querySelector('#output').textContent = output;
+                    
+                }
+            </script>
+
+        <h1 id="timer"> You have <span id="output">...</span> seconds!</h1>
+        <h1 id="score"></h1>
+        <h1 id="mot"></h1>
+        <input autocomplete="off" onpaste="return false" id="input" type="text" autofocus>
+
+        <button id="boutton" >OK</button>
+      
+        
+
+        <h1  id="gameOver"></h1>
+        <button id="start" >Start</button>
+
+
+        <h1 id="resultMessage">Very Good, you're a fast typer !!!</h1>
+       
+
+        <button id="restart" >Restart</button>
+
+
+        <div>
+        <a href="index.html"><button id="goToHomePage" >Go Back</button></a>
+    </div>
+    </div>
+    </div>
+
+
+    
+
+
+
+</body>
+</html>

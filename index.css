@@ -1,0 +1,70 @@
+#jeu{
+    background-color: bisque;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    height: 530px;
+  
+    
+}
+
+#content{
+    padding: 150px 0;
+    text-align: center;
+}
+
+
+body{
+    background-color: rgb(90, 157, 147);
+}
+
+#start{
+    font-size: 24px;
+    padding: 14px 40px;
+    border-radius: 20px;
+    color: rgb(0, 101, 190);
+
+}
+
+#start:hover{
+    background-color: rgb(0, 101, 190);
+  color: white;
+  
+}
+
+
+
+#restart{
+    font-size: 24px;
+    padding: 14px 40px;
+    border-radius: 20px;
+    color: rgb(0, 101, 190);
+
+}
+
+#restart:hover{
+    background-color: rgb(0, 101, 190);
+  color: white;
+  
+}
+
+
+
+
+#goToHomePage{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 14px 40px;
+    border-radius: 20px;
+    color: rgb(0, 101, 190);
+}
+
+#goToHomePage:hover{
+    background-color: rgb(0, 101, 190);
+  color: white;
+}
