@@ -2,35 +2,24 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Typing Game</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="clavier.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    
+    <style>
+
+    </style>
 </head>
-
-<style>
-    #jeu {
-        margin: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-color: aquamarine;
-        border: 2px solid;
-        padding: 15%;
-        text-align: center;
-
-
-    }
-</style>
 
 <body>
 
     <div id="jeu">
+
+        <h2 style="color: #20b2aa; margin-bottom: 30px;">Typing Game</h2>
 
         <select name="Difficulter" id="Difficulter">
             <option value="Facile">Facile</option>
@@ -40,24 +29,21 @@
         </select>
 
         <select name="Timer" id="timeSelect">
-            <option value="...">Timer: ...</option>
-            <option value=40>Timer: 40s</option>
-            <option value=60>Timer: 60s</option>
-            <option value=80>Timer: 80s</option>
-            <option value=100>Timer: 100s</option>
-            <option value=120>Timer: 120s</option>
+            <option value="...">Timer: Choose a timer</option>
+            <option value="40">Timer: 40s</option>
+            <option value="60">Timer: 60s</option>
+            <option value="80">Timer: 80s</option>
+            <option value="100">Timer: 100s</option>
+            <option value="120">Timer: 120s</option>
         </select>
 
         <h1 id="timer">Timer: </h1>
         <h1 id="score">Score: 0</h1>
         <h1 id="word">.</h1>
-        <input id="input" type="text">
+        <input id="input" type="text" placeholder="Start typing...">
     </div>
 
-
-
-<script src="clavier.js"></script>
+    <script src="clavier.js"></script>
 </body>
-
 
 </html>
