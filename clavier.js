@@ -10,7 +10,16 @@
     let point = 0;
     //*****************************************************
 
+    //Fonction pour les different difficulter du jeu
+    async function premierMot() {
+    
+        const response = await fetch('https://random-word.ryanrk.com/api/en/word/random/?maxlength=2');
+        const myJson = await response.json();
+        word.textContent = myJson.toString().toUpperCase();
 
+    }
+
+    premierMot();
 
 
     //Fonction pour les different difficulter du jeu
