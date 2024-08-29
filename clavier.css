@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff;
     font-family: 'Arial', sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
-    border: 2px solid #20b2aa; /* Light sea green border */
+    border: 2px solid #20b2aa;
     border-radius: 15px;
     padding: 50px;
     width: 400px;
@@ -43,5 +43,5 @@ body {
 }
 
 #input {
-    visibility: hidden; /* Initially hidden, revealed when game starts */
+    visibility: hidden;
 }
