@@ -7,6 +7,7 @@
     let btn = document.getElementById("btn");
     let difficulter = document.getElementById("Difficulter");
 
+    input.style.visibility = "hidden";
     let point = 0;
     //*****************************************************
 
@@ -125,6 +126,8 @@
 
     function setTime() {
         timer.textContent = "Timer: " + timeSelect.value + " s";
+        input.style.visibility = "visible";
+
     }
 
 
