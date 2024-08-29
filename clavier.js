@@ -4,10 +4,11 @@
     let score = document.getElementById("score");
     let word = document.getElementById("word");
     let input = document.getElementById("input");
-    let btn = document.getElementById("btn");
     let difficulter = document.getElementById("Difficulter");
 
     input.style.visibility = "hidden";
+    word.style.visibility = "hidden";
+
     let point = 0;
     //*****************************************************
 
@@ -83,7 +84,6 @@
         }
     }
 
-    btn.addEventListener('click', choixDifficulter);
 
     //*****************************************************
 
@@ -127,6 +127,8 @@
     function setTime() {
         timer.textContent = "Timer: " + timeSelect.value + " s";
         input.style.visibility = "visible";
+        word.style.visibility = "visible";
+
 
     }
 
@@ -153,7 +155,6 @@
                     clearInterval(interval);
                     word.style.visibility = "hidden";
                     input.style.visibility = "hidden";
-                    btn.style.visibility = "hidden";
                     score.textContent = "Votre score est " + point;
                 }
 
