@@ -1,7 +1,9 @@
 body {
-    background-color: #ff0000; /* Dark blue background */
+    background-color: #000000; /* Background color */
     font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
 }
 
 #jeu {
@@ -9,19 +11,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, #1a01f7, #e9914e); /* Gradient from light yellow to orange */
+    background: linear-gradient(to right, #1a01f7, #e9914e); /* Gradient background */
     border-radius: 15px;
     padding: 30px;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Adjust width to fit within viewport */
+    max-width: 800px; /* Optional: maximum width */
+    height: 80%; /* Adjust height to fit within viewport */
     text-align: center;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
-
 
 /* Style adjustments for select and input elements */
 #jeu select,
 #jeu input {
-    width: 70%;
+    width: 75%; /* Full width of the container */
     margin-top: 15px;
     padding: 10px;
     font-size: 18px;
@@ -44,21 +47,20 @@ body {
     font-size: 2rem; /* Responsive font size */
     font-weight: bold;
     margin-bottom: 20px;
-    color: #0cf3ff; /* Deep blue color */
+    color: #0cf3ff; /* Light blue color */
 }
 
 /* Hide input field initially */
 #input {
     visibility: hidden; /* Initially hidden, revealed when game starts */
-    width: 50%;
+    width: 100%; /* Full width of the container */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     #jeu {
         padding: 20px;
-        height: 100%;
-
+        height: 85%; /* Adjust height for smaller screens */
     }
 
     #word {
@@ -69,8 +71,8 @@ body {
 @media (max-width: 576px) {
     #jeu {
         padding: 15px;
-        height: 100%;
-        width: 100%;
+        height: 90%; /* Adjust height for very small screens */
+        width: 95%; /* Adjust width for very small screens */
     }
 
     #word {
