@@ -57,10 +57,11 @@ body {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     #jeu {
         padding: 20px;
-        height: 85%; /* Adjust height for smaller screens */
+        height: 100%; /* Adjust height for very small screens */
+        width: 100% /* Adjust height for smaller screens */
     }
 
     #word {
@@ -71,8 +72,8 @@ body {
 @media (max-width: 576px) {
     #jeu {
         padding: 15px;
-        height: 90%; /* Adjust height for very small screens */
-        width: 95%; /* Adjust width for very small screens */
+        height: 100%; /* Adjust height for very small screens */
+        width: 100%; /* Adjust width for very small screens */
     }
 
     #word {
