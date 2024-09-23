@@ -1,9 +1,9 @@
 body {
-    background-color: #000000; /* Background color */
+    background-color: #000000;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrollbars */
+    overflow: hidden; 
 }
 
 #jeu {
@@ -11,73 +11,68 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, #1a01f7, #e9914e); /* Gradient background */
+    background: linear-gradient(to right, #1a01f7, #e9914e); 
     border-radius: 15px;
     padding: 30px;
-    width: 100%; /* Adjust width to fit within viewport */
-    max-width: 800px; /* Optional: maximum width */
-    height: 80%; /* Adjust height to fit within viewport */
+    width: 100%;
+    max-width: 800px;
+    height: 80%; 
     text-align: center;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Style adjustments for select and input elements */
 #jeu select,
 #jeu input {
-    width: 75%; /* Full width of the container */
+    width: 75%; 
     margin-top: 15px;
     padding: 10px;
     font-size: 18px;
-    border: 2px solid #20b2aa; /* Light sea green border */
+    border: 2px solid #20b2aa;
     border-radius: 5px;
     outline: none;
     text-align: center;
 }
 
-/* Style adjustments for text elements */
 #timer,
 #score,
 #word {
     margin-top: 20px;
-    color: #ffffff; /* White text color for better contrast */
+    color: #ffffff; 
 }
 
-/* Styling for the word element */
 #word {
-    font-size: 2rem; /* Responsive font size */
+    font-size: 2rem; 
     font-weight: bold;
     margin-bottom: 20px;
-    color: #0cf3ff; /* Light blue color */
+    color: #0cf3ff; 
 }
 
-/* Hide input field initially */
 #input {
-    visibility: hidden; /* Initially hidden, revealed when game starts */
-    width: 100%; /* Full width of the container */
+    visibility: hidden; 
+    width: 100%; 
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 968px) {
     #jeu {
         padding: 20px;
-        height: 100%; /* Adjust height for very small screens */
-        width: 100% /* Adjust height for smaller screens */
+        height: 100%; 
+        width: 100% 
     }
 
     #word {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; 
     }
 }
 
 @media (max-width: 576px) {
     #jeu {
         padding: 15px;
-        height: 100%; /* Adjust height for very small screens */
-        width: 100%; /* Adjust width for very small screens */
+        height: 100%; 
+        width: 100%; 
     }
 
     #word {
-        font-size: 1.25rem; /* Further adjust font size for small screens */
+        font-size: 1.25rem; 
     }
 
     #jeu select,
