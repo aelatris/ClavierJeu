@@ -155,7 +155,7 @@
                     clearInterval(interval);
                     word.style.visibility = "hidden";
                     input.style.visibility = "hidden";
-                    score.textContent = "Votre score est " + point;
+                    score.textContent = "Your score is : " + point;
                 }
 
 
